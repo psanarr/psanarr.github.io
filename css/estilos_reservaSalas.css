@@ -1,0 +1,528 @@
+/* 
+  * "Eliminar" los estilos predeterminados del navegador
+  *  
+  Tamaño intuitivo de contenedores
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Restaurar margenes
+*/
+* {
+  margin: 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+/*
+  Accesibilidad de saltos de linea y legibilidad de textos
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  Restaurar posicionamiento de medios digitales
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  Remover fuentes del sistema para elementos de formulario
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  Obligar al texto a mantenerse dentro de su contenedor
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Titulos */
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Listas sin estilos */
+li {
+  list-style: none;
+}
+
+/* Restaurar links y colores de links y botones */
+a,
+a:focus,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00deff;
+}
+
+button,
+a.boton,
+button.boton {
+  background-color: #10abf5;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  display: inline-block;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+button:hover,
+a.boton:hover,
+button.boton:hover {
+  background-color: #117ac4;
+}
+
+/*
+  Tipografía general del sitio
+*/
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  background-color: #000;
+}
+
+/*
+  Tipografía titulos del sitio
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Variables genericas para ordenamiento */
+.contenedor-central {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenedor-central.texto-centro {
+  text-align: center;
+}
+
+.contenedor-flex {
+  display: flex;
+}
+
+.centrar-vertical {
+  align-items: center;
+}
+
+.flex-espaciado {
+  justify-content: space-between;
+}
+
+.seccion-pagina.seccion-grande {
+  min-height: 65vh;
+}
+
+.seccion-pagina.color-principal {
+  background-color: #590e83;
+}
+
+/* Encabezado (identidad, navegacion y acciones) */
+.encabezado {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding-top: 1rem;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(47, 5, 69, 1) 0%, rgba(0, 0, 0, 1) 99%);
+
+}
+
+.logo {
+  width: 120px;
+  height: fit-content;
+}
+
+.navegacion-principal li,
+.navegacion-pie li {
+  display: inline;
+}
+
+.navegacion-principal li {
+  font-family: "Jersey 15", sans-serif;
+  font-size: 1.3rem;
+  position: relative;
+  padding: 0 1.5rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.centrar-vertical li::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #8a8a8a;
+  right: 0;
+  top: 0;
+}
+
+.centrar-vertical li:last-child::before {
+  background-color: transparent;
+}
+
+.cambio-idioma {
+  display: grid;
+}
+
+.cambio-idioma label {
+  margin-bottom: 0.3rem;
+}
+
+#idioma {
+  padding: 5px;
+  background: #000;
+  border: 3px solid #8a8a8a;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Carrusel */
+#carrusel {
+  position: relative;
+  padding: 5% 0;
+}
+
+#carrusel img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+/* Pié de página */
+.pie-pagina {
+  padding: 2rem 0;
+  border-top: 1px solid #353535;
+  text-align: center;
+}
+
+.pie-pagina a {
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+.pie-pagina p {
+  margin-top: 1.5rem;
+}
+
+.pie-pagina .copyright {
+  font-size: 0.9rem;
+  color: #7caefa;
+}
+
+/* Responsive design */
+
+@media (max-width: 450px) {
+  ul {
+    padding: 0;
+  }
+  
+  .encabezado {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .navegacion-principal {
+    text-align: center;
+  }
+
+  .contenedor-flex {
+    flex-flow: column;
+  }
+
+  .contenedor-central {
+    padding: 1rem;
+  }
+}
+
+
+/*Reservas Salas*/
+
+.main_calendario{
+  text-align: center;
+  padding-top: 150px;
+  display: grid;
+  justify-content: center;
+}
+
+.main_Salas {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: auto;
+  margin: 10px;
+  overflow: hidden;
+  width: max-content;
+  margin: auto;
+  background-color: #222222;
+  /*background-image: url(../media/reuniones.png);
+  background-size: cover;
+  background-position: center;*/
+}
+
+.texto_Titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.texto_Informacion {
+  display: flex;
+  justify-content: center;
+}
+
+.pequena {
+  font-size: x-small;
+  text-align: center;
+}
+
+.cuerpoReserva {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.fotoReserva {
+  width: 250px;
+  height: 250px;
+  margin-right: 25px;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  align-items: center;
+}
+
+.formulario input {
+  color: #9c9c9c;
+}
+
+.formulario input[type="date"], .formulario select {
+  padding: 3px;
+  background: #4d4d4d;
+  border: 2px solid #8a8a8a;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.formulario select {
+  color: #73ffff;
+}
+
+.botonesForm {
+  /*margin-top: 15px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botonesForm input {
+  /*background-color: #10abf5;*/
+  color: #fff;
+  padding: 6px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+.botonSubmit {
+  /* background-color: #1efd00; */
+  background-color: #00deff;
+}
+
+.botonSubmit:active, .botonReset:active {
+  width: 20%;
+}
+
+.botonReset {
+  background-color: #ff0000;
+}
+
+.botonSubmit:hover,
+.botonReset:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--sombra);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.botonSubmit {
+  /* --sombra: #e5ff60; */
+  --sombra: #00deff;
+}
+
+.botonReset {
+  --sombra: #ff684d;
+}
+
+.tipoOrdenadores {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Invertir el color del icono del input Date de abrir el calendario */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); 
+}
+
+/* Oculta el submenu por defecto */
+.submenu {
+  display: none;
+  position: absolute;
+  /* background-color: #47013e; */
+  background-color: rgba(47, 5, 69, 1);
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: max-content;
+  height: max-content;
+}
+
+/* Muestra el submenu cuando se pasa el ratón sobre el elemento padre */
+/*.dropdown:hover .submenu {
+  display: grid;
+  width: max-content;
+  height: max-content;
+}*/
+
+.submenu li {
+  list-style: none;
+  color: #fff;
+}
+
+.submenu li a {
+  color: #ffffff;
+  display: block;
+  padding: 5px 0;
+}
+
+.submenu li::before {
+  display: none;
+}
+
+.precio {
+  border-collapse: collapse;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #b1b1b1;
+}
+
+.precio td,
+.precio th {
+  border: 1px solid rgb(83, 83, 83);
+  padding: 8px;
+}
+
+.precio th {
+  background-color: #4d4d4d;
+}
+
+.precio td:nth-child(2),
+.precio td:last-child {
+  border-left: none;
+}
+
+.precio td:first-child,
+.precio td:nth-child(2) {
+  border-right: none;
+}
+
+#erroresReu, #erroresOrd, #erroresPagos{
+  max-width: 350px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 1px solid red;
+  display: none;
+}
+
+.error-mensaje {
+  color: red;
+  font-size: 12px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.error-mensaje ul {
+  padding: 0;
+  list-style: none;
+}
+
+.error-mensaje li {
+  margin-bottom: 5px;
+}
+
+

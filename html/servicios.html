@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título del sitio -->
+  <title>Cybercave Hostel - Reserva</title>
+  <!-- Icono web -->
+  <link rel="icon" type="image/x-icon" href="../media/favicon.ico">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../css/estilo_servicios.css" />
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+    <script src="../js/submenuReservas.js" defer></script>
+</head>
+
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor-central contenedor-flex flex-espaciado centrar-vertical">
+      <!-- Identidad -->
+      <a href="../index.html"><img class="logo" alt="Cybercabe Hostel Logo" src="../media/cybercave.png" /></a>
+      <!-- Navegacion -->
+      <nav class="navegacion">
+        <ul class="navegacion-principal">
+          <li><a href="../index.html" target="_top">Inicio</a></li>
+          <li class="dropdown" id="submenuReservas">
+            <a href="#" target="_top">Reservas</a>
+            <ul class="submenu">
+              <li><a href="./Reserva_Salas.html">Reserva de salas</a></li>
+              <li><a href="./Reserva_Main.html">Reserva de habitaciones</a></li>
+              <li><a href="./cancelacion1.html">Cancelación</a></li>
+            </ul>
+          </li>
+          <li><a href="./servicios.html" target="_top">Servicios</a></li>          
+          <li><a href="./contacto.html" target="_top">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Controles generales -->
+      <div class="acciones-generales">
+        <ul class="acciones">
+          <li class="cambio-idioma">
+            <label for="idioma">Seleccionar idioma</label>
+            <select name="idioma" id="idioma">
+              <option value="en"><a href="./servicios-en.html">Inglés</a></option>
+              <option value="es" selected><a href="./servicios.html">Español</a></option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="seccion-pagina seccion-grande contenedor-flex centrar-vertical" id="carrusel">
+    <div class="contenido contenedor-central">
+    </div>
+  </section>
+
+  <section class="body-sin-header-footer">
+        
+
+    <section class="seccion-pagina contenedor-flex centrar-vertical seccion-grande color-principal" id="seccion-alojamiento">
+      <div class="contenedor-central texto-centro">
+        <a href="./Reserva_Main.html" class="boton" id="boton-alojamiento">Reserve ahora</a>
+        <h2>ALOJAMIENTO</h2>
+        <div class="contenedor-alojamiento">
+          <div class="contenedor-cama col">
+            <div >
+              <img class="img-alojamiento" src="../media/imagenes_propuesta/hab_doble.jpg" alt="Habitación doble">
+            </div>
+            <div>
+              <h2 class="texto-alojamiento">Habitación doble con baño privado</p>
+            </div>
+          </div>
+          <div class="contenedor-habitacion col">
+            <div >
+              <img class="img-alojamiento" src="../media/imagenes_propuesta/hab_comp3.jpg" alt="Cama en compartida">
+            </div>
+            <div>
+              <h2 class="texto-alojamiento"> Cama en habitación compartida</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seccion-pagina contenedor-flex centrar-vertical seccion-grande color-principal">
+      <div class="contenedor-instalaciones contenedor-central texto-centro">
+        <h2>INSTALACIONES</h2>
+  
+        <!-- Contenedores instalaciones -->
+        <div id="grid-container">
+  
+          <div class="grid-item imagen-sala-reuniones imagen-grid" id="imagen-grid">
+            <!--<img src="../media/reuniones.jpg" alt="Sala de reuniones">-->
+          </div>
+  
+          <div class="grid-item texto-sala-reuniones texto-grid ">
+            <p>Nuestra sala de reuniones ofrece un espacio acogedor con una mesa espaciosa, ideal para mantener reuniones o realizar videollamadas.</p>
+            <a href="./Reserva_Salas.html" class="boton-salas">Reservar</a>
+          </div>
+  
+          <div class="grid-item imagen-sala-ordenadores imagen-grid" id="imagen-grid">
+            <!--<img src="../media/ordenadores.jpg" alt="Sala ordenadores">-->
+          </div> 
+          <div class="grid-item texto-sala-ordenadores texto-grid">
+            <p>Sumérgete en la emoción de los videojuegos en nuestra sala equipada con las últimas tecnologías para experiencias de juego inolvidables con amigos.</p>
+            <a href="./Reserva_Salas.html" class="boton-salas">Reservar</a>
+          </div>
+          <div class="grid-item texto-sala-comun texto-grid">
+            <p>Relájate en nuestra sala común, donde encontrarás cómodos sofás, juegos de mesa, una selección de libros y un ambiente acogedor para disfrutar de tu tiempo.</p>
+          </div>
+          <div class="grid-item imagen-sala-comun imagen-grid" id="imagen-grid">
+            <!--<img src="../media/sala_comun1-transformed.jpeg" alt="Sala comun">-->
+          </div>  
+          <div class="grid-item texto-cocina texto-grid ">
+            <p>Cocina equipada donde puedes guardar y cocinar tus comidas.</p>
+          </div>
+          <div class="grid-item imagen-cocina imagen-grid" id="imagen-grid">
+            <!--<img src="../media/imagenes_propuesta/comedor.jpg" alt="Imagen cocina">-->
+          </div>
+          <div class="grid-item imagen-banios imagen-grid" id="imagen-grid">
+            <!--<img src="../media/imagenes_propuesta/baños.jpg" alt=""> -->
+          </div>  
+          <div class="grid-item texto-banios texto-grid">
+            <p>Baños con todos los servicios disponibles**</p>
+          </div>
+          <div class="grid-item imagen-lavanderia imagen-grid" id="imagen-grid">
+            <!--<img src="../media/imagenes_propuesta/lavanderia.jpg" alt="Imagen lavanderia"> -->      
+          </div>
+          <div class="grid-item texto-lavanderia texto-grid">
+            <p>Con nuestro servicio de lavandería podrás mantener tu ropa limpia a un bajo coste.</p>
+          </div>   
+        </div>
+      </div>
+    </section>
+    <section class="seccion-pagina contenedor-flex centrar-vertical seccion-grande color-principal">
+      <div class="contenedor-central texto-centro">
+        <a href="./Reserva_Main.html" class="boton boton-inferior">Reserve ahora</a>
+        <h2>ACTIVIDADES</h2>
+          <div class="contenedor-actividades">
+            <div id="texto-actividades">
+              <h3>Apúntate a nuestras actividades semanales</h3>
+              <p> Visitas guiadas, excursiones a otras Ciudades, intercambios... ¡Y muchas más!</p>
+            </div>
+            <div>
+              <img id="imagen-actividades" src="../media/imagenes_propuesta/actividades (2).jpg" alt="Imagen actividades por Sevilla">
+            </div>
+        </div>
+        
+      </div>
+      
+    </section>
+  </section>
+  <!-- Pié de página -->
+  <footer class="pie-pagina">
+    <!-- Navegacion -->
+    <nav class="navegacion contenedor-central">
+      <ul class="navegacion-pie">
+        <li><a href="../index.html" target="_top">Inicio</a></li>
+        <li><a href="./Reserva_Main.html" target="_top">Reservas</a></li>
+        <li><a href="./servicios.html" target="_top">Servicios</a></li>
+        <li><a href="./contacto.html" target="_top">Contacto</a></li>
+        <li><a href="./erpCrm.html" target="_top">ERP / CRM</a></li>
+        <li><a href="./rss.html" target="_top">RSS</a></li>
+        <li><a href="./polPriv.html" target="_top">Política de privacidad</a></li>
+        <li><a href="./condiciones.html" target="_top">Términos y condiciones</a></li>
+      </ul>
+      <!-- Dentro de los link son imagenes SVG en formato html -->
+      <p class="social">
+        <a href="./index.html" target="_top"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+        <a href="./index.html" target="_top"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M2.038 5.61A2.01 2.01 0 0 0 2 6v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6c0-.12-.01-.238-.03-.352l-.866.65-7.89 6.032a2 2 0 0 1-2.429 0L2.884 6.288l-.846-.677Z" />
+            <path
+              d="M20.677 4.117A1.996 1.996 0 0 0 20 4H4c-.225 0-.44.037-.642.105l.758.607L12 10.742 19.9 4.7l.777-.583Z" />
+          </svg>
+        </a>
+        <a href="./index.html" target="_top"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M18.942 5.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.586 11.586 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3 17.392 17.392 0 0 0-2.868 11.662 15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.638 10.638 0 0 1-1.706-.83c.143-.106.283-.217.418-.331a11.664 11.664 0 0 0 10.118 0c.137.114.277.225.418.331-.544.328-1.116.606-1.71.832a12.58 12.58 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM8.678 14.813a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.929 1.929 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+          </svg>
+        </a>
+      </p>
+      <p class="copyright">Copyright © 2024 Cybercave Hostel. Todos los derechos reservados.</p>
+    </nav>
+  </footer>
+</body>
+
+</html>

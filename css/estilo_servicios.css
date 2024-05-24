@@ -1,0 +1,553 @@
+/* 
+  * "Eliminar" los estilos predeterminados del navegador
+  *  
+  Tamaño intuitivo de contenedores
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Restaurar margenes
+*/
+* {
+  margin: 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+/*
+  Accesibilidad de saltos de linea y legibilidad de textos
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  Restaurar posicionamiento de medios digitales
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  Remover fuentes del sistema para elementos de formulario
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  Obligar al texto a mantenerse dentro de su contenedor
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Titulos */
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Listas sin estilos */
+li {
+  list-style: none;
+}
+
+/* Oculta el submenu por defecto */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color:#580e8381;
+  padding: 10px;
+  border: 0.5px solid #cccccc7d;
+  width: max-content;
+  height: max-content;
+  box-shadow:  10px 5px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Muestra el submenu cuando se pasa el ratón sobre el elemento padre 
+.dropdown:hover .submenu {
+  display: grid;
+  width: max-content;
+  height: max-content;
+}*/
+
+.submenu li {
+  list-style: none;
+  color: #fff;
+}
+
+.submenu li a {
+  color: #ffffff;
+  display: block;
+  padding: 5px 0;
+}
+
+.submenu li::before {
+  display: none;
+}
+
+/* Restaurar links y colores de links y botones */
+a,
+a:focus,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00deff;
+}
+
+button,
+a.boton,
+button.boton {
+  background-color: #10abf5;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+#boton-alojamiento{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.boton-inferior{
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+button:hover,
+a.boton:hover,
+button.boton:hover {
+  background-color: #117ac4;
+}
+button:active,
+a.boton:active,
+button.boton:active {
+  background-color: #0e5d95;
+}
+  /*Botones reserva salas*/
+a.boton-salas,
+button.boton{
+  background-color: #262323;
+  padding: 0.7rem 1.2rem;
+  color: #fff;
+  display: inline-block;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.boton-salas:hover,
+button.boton:hover{
+  background-color: #000000;
+  color: #ffffffdf;
+}
+
+/*
+  Tipografía general del sitio
+*/
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  background-color: #000;
+}
+
+/*
+  Tipografía titulos del sitio
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2{
+  margin-bottom: 5%;
+}
+
+/* Variables genericas para ordenamiento */
+.contenedor-central {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenedor-central.texto-centro {
+  text-align: center;
+}
+
+.contenedor-flex {
+  display: flex;
+}
+
+.centrar-vertical {
+  align-items: center;
+}
+
+.flex-espaciado {
+  justify-content: space-between;
+}
+
+.seccion-pagina.seccion-grande {
+  min-height: 65vh;
+}
+
+.seccion-pagina.seccion-grande {
+  min-height: 65vh;
+}
+
+/*.seccion-pagina.color-principal {
+  background-color: #590e83;
+  background: linear-gradient(0deg, rgba(47,5,69,0.01) 0%, rgba(89,14,131,1) 100%);
+
+}*/
+
+/* Encabezado (identidad, navegacion y acciones) */
+.encabezado {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding-top: 1rem;
+  background: linear-gradient(180deg, rgba(47, 5, 69, 1) 0%, rgba(122, 22, 143, 0) 99%);
+}
+
+.logo {
+  width: 120px;
+  height: fit-content;
+}
+
+.navegacion-principal li,
+.navegacion-pie li {
+  display: inline;
+}
+
+.navegacion-principal li {
+  font-family: "Jersey 15", sans-serif;
+  font-size: 1.3rem;
+  position: relative;
+  padding: 0 1.5rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.centrar-vertical li::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #8a8a8a;
+  right: 0;
+  top: 0;
+}
+
+.centrar-vertical li:last-child::before {
+  background-color: transparent;
+}
+
+.cambio-idioma {
+  display: grid;
+}
+
+.cambio-idioma label {
+  margin-bottom: 0.3rem;
+}
+
+#idioma {
+  padding: 5px;
+  background: transparent;
+  border: 3px solid #8a8a8a;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Carrusel */
+#carrusel {
+  position: relative;
+  padding: 5% 0;
+  background-image: url("../media/imagenes_propuesta/sala_ord.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#carrusel img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+}
+/* Cuerpo */
+.body-sin-header-footer{
+  background-color: #590e83;
+  background: linear-gradient(0deg, rgba(47,5,69,0.01) 0%, rgba(89,14,131,1) 80%);
+}
+
+/* Cuerpo - Alojamiento*/
+
+
+#seccion-alojamiento{
+  /*background-color: #ffffff;*/
+  padding-bottom: 7%;
+}
+
+.contenedor-alojamiento{
+  margin-top: 5%;
+  padding: 0px;/*nuevo*/
+  margin: 0px;/*nuevo*/
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.contendor-cama{
+ 
+}
+.contenedor-habitacion{
+  
+}
+.contenedor-cama, .contenedor-habitacion{
+
+
+  /*  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column;
+ float: left;
+  width: 50%;
+  text-align: center;*/
+}
+
+
+/*.col{
+  display: block;
+  float: left;
+  margin: 1% 0 1% 2%;
+}*/
+.contenedor-habitacion{
+  /*margin-left: 10%;*/
+}
+.img-alojamiento{
+  box-shadow:  10px 5px 5px 0 rgba(0, 0, 0, 0.15);
+  margin: 1rem auto;
+  border: 2px solid white;
+  transition: all .5s ease;
+
+}
+.img-alojamiento:hover {
+  transform: scale(1.1);
+}
+.texto-alojamiento{
+  font-size:1.7rem;
+}
+
+/* Cuerpo - Instalaciones */
+.contenedor-instalaciones{
+
+}
+/* Instalaciones - Bloque de imágenes*/
+#grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.grid-item{
+  text-align: center;
+  height: 300px;
+  width: 300px;
+}
+
+/* Carrusel 
+#carrusel {
+  position: relative;
+  padding: 5% 0;
+  background-image: url("../media/imagenes_propuesta/sala_ord.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#carrusel img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+}*/
+
+.imagen-sala-reuniones,
+.imagen-sala-ordenadores,
+.texto-sala-comun,
+.texto-cocina,
+.imagen-banios,
+.imagen-lavanderia{
+  /*background-color: #9fdde6;*/
+  background-color: #b386c01b;
+}
+.imagen-sala-reuniones{
+  background-image: url("../media/reuniones.jpg");
+}
+.imagen-sala-ordenadores{
+  background-image: url("../media/ordenadores.jpg");
+}
+
+.imagen-sala-comun{
+  background-image: url("../media/sala_comun1-transformed.jpeg");
+  height: 100%;
+}
+.imagen-cocina{
+  background-image: url("../media/imagenes_propuesta/comedor.jpg");
+}
+.imagen-banios{
+  background-image: url("../media/imagenes_propuesta/baños.jpg");
+}
+.imagen-lavanderia{
+  background-image: url("../media/imagenes_propuesta/lavanderia.jpg");
+}
+
+.texto-sala-reuniones,
+.texto-sala-ordenadores,
+.imagen-sala-comun,
+.imagen-cocina,
+.texto-banios,
+.texto-lavanderia{
+  background-color: #b386c0;
+  color: #000;
+  
+}
+.texto-grid{
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#imagen-grid {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height:auto;
+  transition: all .5s ease;
+}
+#imagen-grid:hover{
+  background-size: 180%;
+}
+
+/*SECCIÓN ACTIVIDADES*/
+
+.contenedor-actividades{
+  border: 2px solid #35353594;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 5%;
+  margin-bottom: 10%;
+}
+#imagen-actividades{
+  box-shadow:  10px 5px 5px 0 rgba(0, 0, 0, 0.15);
+  margin: 5%;
+  height: 80%;
+}
+#texto-actividades{
+  margin: 5%;
+  padding: 5%;
+}
+
+/* Pie de página */
+.pie-pagina {
+  padding: 2rem 0;
+  border-top: 1px solid #353535;
+  text-align: center;
+}
+
+.pie-pagina a {
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+.pie-pagina p {
+  margin-top: 1.5rem;
+}
+
+.pie-pagina .copyright {
+  font-size: 0.9rem;
+  color:  #00deff;
+}
+
+/* Responsive design */
+
+@media (max-width: 450px) {
+  ul {
+    padding: 0;
+  }
+  
+  .encabezado {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .navegacion-principal {
+    text-align: center;
+  }
+
+  .contenedor-flex {
+    flex-flow: column;
+  }
+
+  .contenedor-central {
+    padding: 1rem;
+  }
+}
