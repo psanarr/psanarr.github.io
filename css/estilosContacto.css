@@ -133,7 +133,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #fff;
-  background-color: #000;
+  background-image: url(../media/carrusel.jpg);
 }
 
 /*
@@ -161,6 +161,7 @@ h6 {
 
 .contenedor-central.texto-centro {
   text-align: center;
+ 
 }
 
 .contenedor-flex {
@@ -265,11 +266,11 @@ h6 {
 
 /* CONTACTO */
 form {
-  margin: 2rem 0;
+  margin: 32px 0;
 }
 
 .contacto-info {
-  padding-top: 1.5rem;
+  padding-top: 24px;
   justify-content: center;
 }
 
@@ -354,7 +355,7 @@ svg {
 
 .pie-pagina .copyright {
   font-size: 0.9rem;
-  color: #6d1c93;
+  color: #ffffff;
 }
 
 /* Responsive design */

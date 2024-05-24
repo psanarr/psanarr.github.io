@@ -350,12 +350,6 @@ h2{
   grid-template-columns: auto auto;
   justify-content: space-between;
 }
-.contendor-cama{
- 
-}
-.contenedor-habitacion{
-  
-}
 .contenedor-cama, .contenedor-habitacion{
 
 
@@ -443,7 +437,6 @@ h2{
 .imagen-sala-ordenadores{
   background-image: url("../media/ordenadores.jpg");
 }
-
 .imagen-sala-comun{
   background-image: url("../media/sala_comun1-transformed.jpeg");
   height: 100%;
@@ -480,11 +473,11 @@ h2{
   background-position: center;
   width:100%;
   height:auto;
-  transition: all .5s ease;
+  /*transition: all .5s ease;*/
 }
-#imagen-grid:hover{
+/*#imagen-grid:hover{
   background-size: 180%;
-}
+}*/
 
 /*SECCIÓN ACTIVIDADES*/
 
@@ -524,7 +517,7 @@ h2{
 
 .pie-pagina .copyright {
   font-size: 0.9rem;
-  color:  #00deff;
+  color: #ffffff;
 }
 
 /* Responsive design */
